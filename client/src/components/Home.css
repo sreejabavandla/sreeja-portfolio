@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
+
+.home {
+  height: 100vh;
+  background-color: #0f0f1b;
+  color: #FF6FD8;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Fira Code', monospace;
+  text-align: center;
+  padding: 2rem;
+}
+
+/* Typing effect with gradient glow */
+.typing {
+  font-size: 3rem;
+  background: linear-gradient(90deg, #FF6FD8, #3813C2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid #FF6FD8;
+  width: 0;
+  animation:
+    typing 2.5s steps(20, end) forwards,
+    blink 0.7s step-end infinite;
+}
+
+/* Subtitle fade in */
+.subtitle {
+  opacity: 0;
+  font-size: 1.25rem;
+  color: #c3baff;
+  margin-top: 1.5rem;
+  animation: fadeIn 1s ease-in forwards;
+  animation-delay: 2.6s;
+}
+
+/* Typing animation */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 18ch }
+}
+
+/* Blinking cursor */
+@keyframes blink {
+  50% { border-color: transparent }
+}
+
+/* Fade in effect */
+@keyframes fadeIn {
+  to { opacity: 1 }
+}

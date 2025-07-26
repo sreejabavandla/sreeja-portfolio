@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&family=Montserrat&display=swap');
+
+.education-section {
+  background-color: #0f0f1b;
+  padding: 4rem 2rem;
+  font-family: 'Montserrat', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.education-heading {
+  font-size: 2.3rem;
+  background: linear-gradient(90deg, #FF6FD8, #3813C2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 3rem;
+  text-transform: lowercase;
+  font-family: 'Fira Code', monospace;
+}
+
+.vertical-timeline-element-content {
+  background-color: rgba(15, 15, 27, 0.8) !important;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 4px 20px rgba(255, 111, 216, 0.15);
+  color: #e0e0e0 !important;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.vertical-timeline-element-title {
+  font-size: 1.3rem;
+  background: linear-gradient(90deg, #FF6FD8, #3813C2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.vertical-timeline-element-subtitle {
+  color: #c3baff;
+  font-size: 1.1rem;
+}
+
+.vertical-timeline-element-date {
+  color: #bbbbbb !important;
+  font-family: 'Fira Code', monospace;
+}
+
+.vertical-timeline-element-content-arrow {
+  border-right: 7px solid #0f0f1b !important;
+}
+
+.vertical-timeline-element-icon {
+  background: linear-gradient(135deg, #FF6FD8, #3813C2) !important;
+  color: #ffffff !important;
+  box-shadow: 0 0 12px rgba(255, 111, 216, 0.4);
+}

@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&family=Montserrat&display=swap');
+
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: rgba(15, 15, 27, 0.8); /* dark blur */
+  backdrop-filter: blur(10px);
+  font-family: 'Fira Code', monospace;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  box-shadow: 0 4px 12px rgba(255, 111, 216, 0.12);
+}
+
+.nav-links {
+  display: flex;
+  gap: 2.5rem;
+  list-style: none;
+}
+
+.nav-links a {
+  color: #f0eaff;
+  text-decoration: none;
+  font-size: 1rem;
+  position: relative;
+  padding: 0.3rem 0;
+  transition: all 0.3s ease-in-out;
+  font-family: 'Fira Code', monospace;
+}
+
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background: linear-gradient(to right, #FF6FD8, #3813C2);
+  left: 0;
+  bottom: -3px;
+  transition: width 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #FF6FD8;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
