@@ -10,7 +10,7 @@ const PORT = process.env.PORT || 5000;
 
 // Middleware
 app.use(cors({
-  origin: 'https://sreeja-portfolio-eta.vercel.app', // your Vercel frontend
+  origin: 'https://sreeja-portfolio-eta.vercel.app',
   methods: ['GET', 'POST'],
 }));
 app.use(express.json());
