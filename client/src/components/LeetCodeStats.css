@@ -1,0 +1,21 @@
+.leetcode-card {
+  background: #0f0f1b;
+  text-align: center;
+  padding: 2rem 1rem;
+  font-family: 'Fira Code', monospace;
+}
+
+.leetcode-card h2 {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+  background: linear-gradient(to right, #FF6FD8, #3813C2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.leetcode-img {
+  max-width: 100%;
+  height: 20rem;
+  border-radius: 12px;
+  box-shadow: 0 0 18px rgba(255, 111, 216, 0.12)
+}

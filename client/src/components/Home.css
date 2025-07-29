@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
 
 .home {
-  height: 100vh;
+  min-height: 90vh;
   background-color: #0f0f1b;
   color: #FF6FD8;
   display: flex;
@@ -10,12 +10,13 @@
   align-items: center;
   font-family: 'Fira Code', monospace;
   text-align: center;
-  padding: 2rem;
+  padding: 1.5rem;
+  gap: 1rem;
 }
 
-/* Typing effect with gradient glow */
+/* Typing effect */
 .typing {
-  font-size: 3rem;
+  font-size: 2.5rem;
   background: linear-gradient(90deg, #FF6FD8, #3813C2);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -24,32 +25,90 @@
   border-right: 2px solid #FF6FD8;
   width: 0;
   animation:
-    typing 2.5s steps(20, end) forwards,
+    typing 2.2s steps(18, end) forwards,
     blink 0.7s step-end infinite;
 }
 
 /* Subtitle fade in */
 .subtitle {
   opacity: 0;
-  font-size: 1.25rem;
+  font-size: 1.1rem;
   color: #c3baff;
-  margin-top: 1.5rem;
+  margin-top: 1rem;
   animation: fadeIn 1s ease-in forwards;
-  animation-delay: 2.6s;
+  animation-delay: 2.4s;
+}
+
+.socials {
+  margin-top: 20px;
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.socials a {
+  color: linear-gradient(90deg, #FF6FD8, #bb66f0);
+  transition: transform 0.2s ease;
+  font-size: 1.4rem;
+}
+
+.socials a:hover {
+  transform: scale(1.2);
 }
 
 /* Typing animation */
 @keyframes typing {
   from { width: 0 }
-  to { width: 18ch }
+  to { width: 16ch }
 }
 
-/* Blinking cursor */
 @keyframes blink {
   50% { border-color: transparent }
 }
 
-/* Fade in effect */
 @keyframes fadeIn {
   to { opacity: 1 }
+}
+
+@media (max-width: 768px) {
+  .home {
+    min-height: auto;
+    padding: 1.5rem 1rem;
+    gap: 1rem;
+  }
+
+  .typing {
+    font-size: 2rem;
+    animation: typing 2.2s steps(16, end) forwards, blink 0.7s step-end infinite;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+    margin-top: 0.8rem;
+  }
+
+  .socials {
+    gap: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .typing {
+    font-size: 1.7rem;
+    animation: typing 2s steps(14, end) forwards, blink 0.7s step-end infinite;
+  }
+
+  .subtitle {
+    font-size: 0.95rem;
+    margin-top: 0.6rem;
+  }
+
+  .socials {
+    gap: 14px;
+  }
+
+  .socials a {
+    font-size: 1.2rem;
+  }
 }

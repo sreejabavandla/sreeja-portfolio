@@ -20,7 +20,6 @@ function Education() {
       <VerticalTimeline lineColor="#FF6FD8">
         <VerticalTimelineElement
           className="vertical-timeline-element--education"
-          date="2022 - 2026"
           iconStyle={{
             background: 'linear-gradient(135deg, #FF6FD8, #3813C2)',
             color: '#ffffff',
@@ -37,14 +36,14 @@ function Education() {
           contentArrowStyle={{ borderRight: '7px solid #0f0f1b' }}
           icon={<FaGraduationCap />}
         >
-          <h3 className="vertical-timeline-element-title">B.E. in cse - cybersecurity, IoT and blockchain techonology</h3>
+          <span className="year">2022 – 2026</span>
+          <h3 className="vertical-timeline-element-title">B.E. in cse - cybersecurity, IoT and blockchain technology</h3>
           <h4 className="vertical-timeline-element-subtitle">cbit, hyderabad</h4>
           <p><strong>cgpa:</strong> 9.16</p>
         </VerticalTimelineElement>
 
         <VerticalTimelineElement
           className="vertical-timeline-element--education"
-          date="2019 - 2021"
           iconStyle={{
             background: 'linear-gradient(135deg, #3813C2, #FF6FD8)',
             color: '#ffffff',
@@ -61,6 +60,7 @@ function Education() {
           contentArrowStyle={{ borderRight: '7px solid #0f0f1b' }}
           icon={<FaGraduationCap />}
         >
+          <span className="year">2020 – 2022</span>
           <h3 className="vertical-timeline-element-title">intermediate - mpc</h3>
           <h4 className="vertical-timeline-element-subtitle">tapasya junior college</h4>
           <p><strong>percentage:</strong> 98%</p>

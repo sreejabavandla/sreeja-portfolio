@@ -15,6 +15,16 @@ function Experience() {
           <p className="experience-description">
             worked on remote manageability of embedded systems, enabling secure updates and service control using gRPC.
           </p>
+                    <div className="tech-stack">
+            <span className="badge">C</span>
+            <span className="badge">gRPC</span>
+            <span className="badge">Protobuf</span>
+            <span className="badge">Linux</span>
+            <span className="badge">Python</span>
+            <span className="badge">ANTLR</span>
+            <span className="badge">Raspberry Pi</span>
+            <span className="badge">Embedded Systems</span>
+          </div>
         </div>
       </div>
     </section>

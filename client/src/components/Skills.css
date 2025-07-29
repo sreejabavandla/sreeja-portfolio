@@ -1,0 +1,91 @@
+.skills {
+  background: #0f0f1b;
+  padding: 80px 20px;
+  color: #fff;
+  text-align: center;
+}
+
+.skills h2 {
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  background: linear-gradient(to right, #FF6FD8, #3813C2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.skill-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.skill-block h3 {
+  font-size: 1.3rem;
+  color: #e0e0e0;
+  margin-bottom: 1rem;
+}
+
+.skill-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.skill {
+  background: rgba(255, 111, 216, 0.08);
+  padding: 1.2rem;
+  width: 100px;
+  height: 110px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.skill:hover {
+  background: rgba(255, 111, 216, 0.15);
+  transform: scale(1.05);
+}
+
+.skill .icon {
+  font-size: 2.2rem;
+  background: linear-gradient(to right, #FF6FD8, #3813C2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.skill p {
+  margin-top: 0.5rem;
+  font-size: 0.85rem;
+  font-family: 'Fira Code', monospace;
+  color: #ddd;
+}
+
+/* 📱 Responsive: Stack skill categories nicely */
+@media (max-width: 768px) {
+  .skill {
+    width: 80px;
+    height: 90px;
+  }
+
+  .skill .icon {
+    font-size: 1.8rem;
+  }
+
+  .skill p {
+    font-size: 0.75rem;
+  }
+
+  .skills h2 {
+    font-size: 2rem;
+  }
+
+  .skill-block h3 {
+    font-size: 1.1rem;
+  }
+}
