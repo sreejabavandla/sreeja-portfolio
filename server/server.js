@@ -12,6 +12,7 @@ const PORT = process.env.PORT || 5000;
 app.use(cors({
   origin: 'https://sreeja-portfolio-eta.vercel.app',
   methods: ['GET', 'POST'],
+  credentials: true
 }));
 app.use(express.json());
 
