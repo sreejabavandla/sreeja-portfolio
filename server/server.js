@@ -10,7 +10,7 @@ const PORT = process.env.PORT || 5000;
 
 // Middleware
 app.use(cors({
-  origin: 'https://sreeja-portfolio-eta.vercel.app',
+  origin: 'https://sreeja-bavandla.vercel.app',
   methods: ['GET', 'POST'],
   credentials: true
 }));
