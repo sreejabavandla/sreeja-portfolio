@@ -108,6 +108,7 @@ button:focus-visible {
 
 html, body {
   height: 100%;
+  background-color: #0f0f1b;
 }
 
 .edublock,
